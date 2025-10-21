@@ -55,13 +55,13 @@ The script will prompt you for the following information:
 
 | Parameter | Example | Description |
 | :--- | :--- | :--- |
-| **Git Repository URL** | `https://github.com/myuser/my-app.git` | The full HTTPS URL of your repository. |
+| **Git Repository URL** | `https://github.com/nuelcruz1/hng13-stage1-devops.git` | The full HTTPS URL of your repository. |
 | **Git Personal Access Token (PAT)** | `ghp_xxxxxxxxxxxxxxxxxxxxxx` | Your token (input is hidden/masked). |
 | **Branch Name** | `main` | The branch to deploy. Defaults to `main`. |
 | **Remote Server Username** | `ubuntu` | The user name to SSH into the remote host. |
-| **Remote Server IP/Host** | `192.168.1.100` | The IP address or DNS hostname of the target server. |
+| **Remote Server IP/Host** | `54.159.24.51` | The IP address or DNS hostname of the target server. |
 | **Full Path to SSH Private Key** | `/home/user/.ssh/id_rsa` | The local path to the private key file. |
-| **Internal Container Port** | `3000` | The port your application *inside* the Docker container listens on (e.g., 80, 3000, 8080). |
+| **Internal Container Port** | `3000` | The port your application *inside* the Docker container listens on (80). |
 
 
 
