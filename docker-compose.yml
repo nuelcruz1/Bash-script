@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # The service name, which the deployment script will derive from the directory name.
+  app:
+    build: .
+    container_name: devops-assignment-app
+    restart: always
+    # Map the internal container port (80) to the host's local port (80)
+    # The deployment script will ultimately expose this via Nginx on the host's port 80.
+    ports:
+      - "80:80"
+    volumes:
+      # Optional: Remove this volume in production, useful for debugging
+      - .:/app
+    environment:
+      # Set a placeholder environment variable
+      COMMIT_HASH: ${GIT_COMMIT_HASH:-local_build}
